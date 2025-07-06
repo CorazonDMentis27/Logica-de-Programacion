@@ -419,3 +419,6 @@ const owl = new library("Cdg","Noah Reyes","2025")
 
 console.log (owl.devolver())
 
+//EJERCICIO 33
+//Crea un objeto llamado coche con:
+//marca
