@@ -408,17 +408,46 @@ console.log(oreo.funciones())
 //Y agrega un método descripcion que devuelva:
 
 class library {
+    // El constructor recibe los parámetros y los asigna como atributos del objeto
     constructor(titulo, autor, año){
-        this.titulo = titulo
-        this.autor = autor
-        this.crash = año
+        this.titulo = titulo; // Título del libro
+        this.autor = autor;   // Autor del libro
+        this.crash = año;     // Año de publicación (llamado 'crash' aquí)
     }
-    devolver(){return ("El libro elegido es " + this.titulo + " su autor es " + this.autor + "fue escrito en el año " + this.crash)}
+    // Método que devuelve una descripción del libro
+    devolver(){
+        return ("El libro elegido es " + this.titulo + 
+                " su autor es " + this.autor + 
+                " fue escrito en el año " + this.crash);
+    }
 }
-const owl = new library("Cdg","Noah Reyes","2025")
 
-console.log (owl.devolver())
+// Creamos una instancia (objeto) de la clase library
+const owl = new library("Cdg", "Noah Reyes", "2025");
+
+// Mostramos la descripción del libro en consola
+console.log(owl.devolver());
 
 //EJERCICIO 33
 //Crea un objeto llamado coche con:
 //marca
+// Definimos la clase Carro con sus atributos y método
+class Carro {
+    // El constructor recibe los parámetros y los asigna como atributos del objeto
+    constructor(marca, modelo, año) {
+        this.marca = marca;   // Marca del coche
+        this.modelo = modelo; // Modelo del coche
+        this.año = año;       // Año del coche
+    }
+    // Método que devuelve una descripción del coche
+    descripcion() {
+        return "El coche es un " + this.marca + " modelo " + this.modelo + " del año " + this.año;
+    }
+}
+
+// Creamos una instancia (objeto) de la clase Carro
+const miCoche = new Carro("Toyota", "Corolla", 2020);
+
+// Mostramos la descripción del coche en consola
+console.log(miCoche.descripcion());
+
